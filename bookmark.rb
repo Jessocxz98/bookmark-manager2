@@ -1,12 +1,10 @@
 class Bookmark
-  attr_reader :bookmarks
-
-  def initialize
-    @bookmarks = ['www.google.com', 'www.twitter.com', 'www.netflix.com']
-  end
-  
-  def all
-    @bookmarks
+  def self.all
+    [
+      "http://www.google.com",
+      "http://www.twitter.com",
+      "http://www.netflix.com"
+     ]
   end
 
 end

@@ -13,8 +13,8 @@ class Bookmarkmanager < Sinatra::Base
   end
 
   get '/bookmarks' do
-    bookmark = Bookmark.new
-    bookmark.all
+    @bookmarks = Bookmark.all
+    erb :bookmarks
 
   end
 
